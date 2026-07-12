@@ -1,0 +1,23 @@
+{
+  "name": "warmup-coach-native",
+  "version": "1.0.0",
+  "description": "热身教练 · Warm-Up Coach — iOS & Android 原生 App",
+  "private": true,
+  "scripts": {
+    "web": "npx serve www -p 3000",
+    "build": "node scripts/build-web.js",
+    "cap:sync": "npx cap sync",
+    "cap:ios": "npx cap open ios",
+    "cap:android": "npx cap open android",
+    "cap:copy": "npx cap copy",
+    "build:ios": "npm run build && npx cap sync ios && echo '✅ iOS 项目已就绪，用 Xcode 打开 ios/App/App.xcworkspace 即可构建'",
+    "build:android": "npm run build && npx cap sync android && echo '✅ Android 项目已就绪，用 Android Studio 打开 android/ 即可构建 APK'",
+    "build:all": "npm run build && npx cap sync && echo '✅ iOS 和 Android 项目已就绪'"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
+  }
+}
