@@ -6,6 +6,7 @@
   "scripts": {
     "web": "npx serve www -p 3000",
     "build": "node scripts/build-web.js",
+    "test": "node --test test/*.test.js",
     "cap:sync": "npx cap sync",
     "cap:ios": "npx cap open ios",
     "cap:android": "npx cap open android",
